@@ -10,7 +10,7 @@
 
 **Environment:**  
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Caterpillar AWS data scientist tenant with access torequireddata and SageMaker notebook
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Caterpillar AWS data scientist tenant with access to required data and SageMaker notebook
 
 **Click on the image for a presentation video**
 
@@ -27,6 +27,13 @@
 **Goal:** 
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Analytics model using Python used to fill the missing data, documented assumptions and limitations of the approaches, and cross validation results of the approach.  
+
+**Data:**  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The data is obfuscated multi-month continuous time series data @1Hz frequency for a group of channels from a mining truck. It contains missing data in one or more channels for a time period. Datasets are stored in parquet format. There are 8 files per asset (one for each month), 76-78 channels per asset, with data recorded each second. Not all days and times are present. 
+ 
+**Environment:**  
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Data is stored on AWS in an S3 bucket. Data can be converted to a Pandas data frame or NumPy array for analysis. All work is done within Caterpillars AWS account, using Amazon Sagemaker.
 
 **Click on the image for a presentation video**
 
